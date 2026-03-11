@@ -1,7 +1,10 @@
 import './globals.css'
+import 'react-photo-view/dist/react-photo-view.css'
 
 import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
+
+import { siteInfo } from '@/constants'
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -14,8 +17,8 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: '热门榜单',
-  description: '🔥 热门榜单',
+  title: siteInfo.title,
+  description: siteInfo.description,
 }
 
 export default function RootLayout({
