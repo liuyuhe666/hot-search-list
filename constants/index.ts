@@ -20,8 +20,12 @@ export const siteInfo = {
   description: '🔥 聚合全网热点榜单，快速了解每天发生的重要事情。',
   author: {
     name: 'LiuYuhe',
-    github: 'https://github.com/liuyuhe666',
+    url: 'https://liuyuhe666.github.io',
     email: 'cnliuyuhe@gmail.com',
+    social: {
+      twitter: 'https://twitter.com/cnliuyuhe',
+      github: 'https://github.com/liuyuhe666',
+    },
   },
   repo: 'https://github.com/liuyuhe666/hot-search-list',
 }

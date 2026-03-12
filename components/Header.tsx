@@ -1,12 +1,19 @@
+import Image from 'next/image'
+
 import { siteInfo } from '@/constants'
 
 export default function Header() {
   return (
-    <header className="bg-slate-900 text-white">
+    <header className="fixed top-0 right-0 left-0 z-50 bg-slate-900 text-white">
       <div className="mx-auto flex max-w-screen-2xl items-center justify-between px-6 py-4">
         <div className="text-lg font-semibold">
           <a href="/" className="flex items-center gap-2">
-            <span className="text-xl">🔥</span>
+            <Image
+              src="/logo.png"
+              alt="HotSearch Logo"
+              width={32}
+              height={32}
+            />
             <h1 className="text-2xl font-bold">HotSearch</h1>
           </a>
         </div>

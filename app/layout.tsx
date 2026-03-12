@@ -3,6 +3,7 @@ import 'react-photo-view/dist/react-photo-view.css'
 
 import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
+import { Toaster } from 'sonner'
 
 import { siteInfo } from '@/constants'
 
@@ -32,6 +33,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <Toaster position="top-center" />
       </body>
     </html>
   )
